@@ -3,9 +3,11 @@ ruby '2.2.1'
 
 gem 'rails', '4.2.1'
 gem 'sqlite3', '1.3.10'
-
 gem 'materialize-sass', '~> 0.96.1'
 gem 'jquery-rails', '~> 4.0.3'
+
+# Views
+gem 'slim-rails', '~> 3.0.1'
 
 # Utils
 gem 'carrierwave', '~> 0.10.0'

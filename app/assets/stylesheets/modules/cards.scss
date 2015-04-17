@@ -1,0 +1,42 @@
+.dwo-card-image {
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dwo-card-image img {
+  border-radius: 2px 2px 0px 0px;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+.dwo-card {
+   position: relative;
+   overflow: hidden;
+   margin: 0.5rem 0px 1rem;
+   background-color: #FFF;
+   border-radius: 2px;
+ }
+
+.dwo-card {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.dwo-card-content {
+  padding: 20px;
+  border-radius: 0px 0px 2px 2px;
+}
+
+.dwo-card-content p {
+  margin: 0;
+}
+
+.dwo-card-title {
+  line-height: 48px;
+  font-size: 24px;
+  font-weight: 300;
+}

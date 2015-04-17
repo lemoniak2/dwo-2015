@@ -1,0 +1,22 @@
+.navigation {
+  background-color: #3861a4;
+  height: 64px;
+  line-height: 64px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li a {
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+  padding: 0 15px;
+  transition: background .3s;
+}
+
+.navigation li a:hover {
+  background: rgba(0,0,0,0.2);
+}

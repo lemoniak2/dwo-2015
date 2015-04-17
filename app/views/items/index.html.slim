@@ -1,0 +1,17 @@
+.row
+  - @items.each do |item|
+    .col.s6.offset-s3
+      .dwo-card
+        .dwo-card-image
+          = image_tag item.image_url
+        .dwo-card-content
+          span.dwo-card-title
+            = item.title
+          p
+            = item.description
+          p
+            = item.rating
+            = link_to 'Vote UP', item_votes_path(item), method: :create
+            = link_to 'Vote DOWN', item_votes_path(item), method: :delete
+          p
+            = link_to 'Edit', edit_item_path(item)

@@ -1,0 +1,15 @@
+= form_for(@item) do |f|
+  .form-inputs
+    .input-field
+      = f.label :title
+      = f.text_field :title
+    .input-field
+      = f.label :description
+      = f.text_area :description, class: 'materialize-textarea'
+    .file-field.input-field
+      = text_field_tag '', '', class: 'file-path validate'
+      .btn
+        span File
+        = f.file_field :image
+  .form-actions
+    = f.button :submit

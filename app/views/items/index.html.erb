@@ -1,0 +1,27 @@
+<div class='row'>
+  <%- @items.each do |item| %>
+    <div class='col s6 offset-s3'>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <%= image_tag item.image_url, class: 'activator' %>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4"><%= item.title %><i class="mdi-navigation-more-vert right"></i></span>
+          <p>
+            <%= item.rating %>
+            <%= link_to 'Vote UP', item_votes_path(item), method: :create %>
+            <%= link_to 'Vote DOWN', item_votes_path(item), method: :delete %>
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><%= item.title %> <i class="mdi-navigation-close right"></i></span>
+          <p><%= item.description %></p>
+          <p>
+          <%= link_to 'Edit', edit_item_path(item) %>
+          <%= link_to 'Destroy', item, data: {:confirm => 'Are you sure?'}, method: :delete %>
+          <p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

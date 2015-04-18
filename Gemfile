@@ -5,6 +5,7 @@ gem 'rails', '4.2.1'
 gem 'sqlite3', '1.3.10'
 gem 'materialize-sass', '~> 0.96.1'
 gem 'jquery-rails', '~> 4.0.3'
+gem 'coffee-rails', '~> 4.1.0'
 
 # Views
 gem 'slim-rails', '~> 3.0.1'

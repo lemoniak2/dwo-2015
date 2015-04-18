@@ -12,6 +12,7 @@ gem 'slim-rails', '~> 3.0.1'
 # Utils
 gem 'carrierwave', '~> 0.10.0'
 gem 'factory_girl_rails', '~> 4.5.0'
+gem 'decent_exposure', '~> 2.3.2'
 
 group :development, :test do
   gem 'guard', '~> 2.12.5'

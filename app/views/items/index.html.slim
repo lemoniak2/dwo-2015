@@ -10,8 +10,8 @@
           p
             = item.description
           p
-            = item.rating
-            = link_to 'Vote UP', item_votes_path(item), method: :create
-            = link_to 'Vote DOWN', item_votes_path(item), method: :delete
+            .rating= item.rating
+            = link_to 'Vote UP', item_votes_path(item), method: :post, remote: true
+            = link_to 'Vote DOWN', item_votes_path(item), method: :delete, remote: true
           p
             = link_to 'Edit', edit_item_path(item)

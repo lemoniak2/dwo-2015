@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require_tree .
 //= require materialize-sprockets
+
+$(document).ready(function() {
+    $("a[data-remote]").on('ajax:success', function(e, data, status, xhr) {
+        $(this).siblings('.rating').html(data.rating);
+    });
+})

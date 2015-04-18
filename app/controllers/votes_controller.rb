@@ -3,17 +3,17 @@ class VotesController < ApplicationController
 
   def create
     if item.vote_up!
-      redirect_to items_path, notice: 'You\'ve voted up'
+      render json: item.to_json, status: 200
     else
-      redirect_to items_path, alert: 'An error has occured'
+      render json: item.to_json, status: 401
     end
   end
 
   def destroy
     if item.vote_down!
-      redirect_to items_path, notice: 'You\'ve voted up'
+      render json: item.to_json, status: 200
     else
-      redirect_to items_path, alert: 'An error has occured'
+      render json: item.to_json, status: 401
     end
   end
 end
